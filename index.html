@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Manju-Warrier-Official</title>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    </script>
+ 
+ 
+      <link
+     rel="stylesheet"
+     href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+ 
+     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+       crossorigin="anonymous"
+      />
+
+   
+
+
+
+    <link href="slider.css"type="text/css" rel="stylesheet">
+    
+    
+
+  </head>
+  <body>
+    
+    <div class="w3-sidebar  w3-bar-block  w3-animate-left   " style="display:none; background-color: #333; "   id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large  " style="background-color:#333 ;"
+        onclick="w3_close()">Close &times;</button>
+        <br>
+
+        <a href="story.html" class="w3-bar-item w3-button" style="color: whitesmoke;">Story</a>
+           <br>
+           
+           
+        <a href="movies.html" class="w3-bar-item w3-button"  style="color:whitesmoke;">Movies</a>
+        <br>
+    
+
+
+
+        <a href="gallery.html" class="w3-bar-item w3-button" style="color:whitesmoke" >Gallery</a>
+        <br>
+        
+        <a href="" onclick="alert('Currently not available')" class="w3-bar-item w3-button" style="color: whitesmoke;" >Fan arts</a>
+        <br>
+        
+        <input type="button" class="w3-bar-item w3-button"id="openModalBtn" value="Developer" style="color:whitesmoke">
+        <br>
+
+        <img src="manju/PicsArt_05-22-12.33.29.png" style="width:140px; margin-top: 47px; margin-left: 21px;" >
+
+      </div>
+      <div  style="  opacity:0.5; height=66px;"  class="hello" id="#hello" >
+        <button class="w3-button w3-darkgrey w3-xxlarge "  onclick="w3_open()">&#9776;</button>
+       
+      </div>
+
+   
+    
+
+
+    <div class="slider">
+      <div class="slide current">
+        
+          
+
+        <div class="content">
+           
+              
+
+
+
+        
+          <p style="font-style: italic;">
+            "I am in love with all the characters I have played. And it is impossible to choose the best"
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+         
+          <p style="font-style: italic;">
+           "I don't plan my roles or my films"
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+         
+          <p  style="font-style: italic;">
+           "Women should come forward to protect other woman, as only a woman can understand the problems of another one"
+
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+       
+          <p style="font-style: italic;">
+            "After marriage, most women keep aside their aspirations and dreams as their priorities change"
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+        
+          <p>
+           "My life is studded with a series of coincidences"
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+         
+          <p style="font-style: italic;">
+            "chase your passion"
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button id="prev"><i class="fas fa-arrow-left"></i></button>
+      <button id="next"><i class="fas fa-arrow-right"></i></button>
+    </div>
+
+
+
+    <div id="openModal1" class="modalDialog col-12" data-modalorder=1 >
+      <div class="col-12 col-sm-12"style="background-image: url(manju/blacknew.jfif);">
+      
+      <a href="#close" title="Close" class="close">X</a>
+      <br>
+      <br>
+
+      <img src="manju/favaz.jpg " style="border-radius: 50%; height: 130px; width: 158px; float:left; margin-right: 22px;"  alt="Avatar">
+     
+      <h1 style="font-size: 30px; font-family: math; color:whitesmoke; ">Favaz AbdulRasheed</h1>
+         <br>
+         <p style="font-size: 17px; font-style: italic;  margin-left: 117px;  margin-top: 17px; color:grey">"Iam a beginner"</p>
+         <br>
+         <p style="font-size: small; font-style: bold; margin-left:34px; color:lightgreen; font-family: monospace;  font-size: 17px">Personal website on development!!</p>
+
+         
+          
+      </div>
+  </div>
+
+    <script src="slider.js">
+
+    </script>
+    <script>
+     function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    
+}
+
+
+
+     
+    </script>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  </body>
+</html>

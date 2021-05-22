@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.slider {
+  position:absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+}
+
+.slide .content h1 {
+  margin-bottom: 10px;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 40%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+
+
+
+/* Backgorund Images */
+ 
+.slide:first-child {
+  background: url('manju/manju-warrier-new-look.jpg') no-repeat
+    center top/cover;
+}
+
+.slide:nth-child(2) {
+  background: url('manju/manju\ new.jpg') no-repeat
+    center top/cover;
+} 
+
+
+.slide:nth-child(3)  {
+  background: url('manju/manju\ new1.jpg') no-repeat
+    center center/cover;
+}
+.slide:nth-child(4) {
+  background: url('manju/photoshoot.png') no-repeat
+    center top/cover;
+}
+.slide:nth-child(5) {
+  background: url('manju/m\ with\ sunglass.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(6) {
+  background: url('manju/dance2.jpg') no-repeat
+    center top/cover;
+}
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  height:500px;
+  width:500px;
+}
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+.modalDialog > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background:white;
+ 
+}
+.close {
+  background:red;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+  background: black;
+}
+.getAssignment{
+cursor:pointer;
+
+background: yellowgreen;
+border: yellowgreen;
+color: white;
+border-radius: 10px;
+position: absolute;
+bottom: 10px;
+right:20px;
+}
+.getAssignment2{
+  cursor:pointer;
+
+background: darkblue;
+border: darkblue;
+color: white;
+border-radius: 10px;
+position: absolute;
+
+}
+.special{
+  cursor:pointer;
+
+
+
+
+font-weight: bolder;
+  cursor: pointer;
+  background: yellowgreen;
+  border: yellowgreen;
+  color: white;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  height: 25px;
+  width: 103px;
+  font-size: 13px;
+
+}
+.Quit{
+
+  cursor:pointer;
+
+
+
+
+  font-weight: bolder;
+    cursor: pointer;
+    background: red;
+    border: red;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    height: 25px;
+    width: 103px;
+    font-size: 13px;
+
+}
+.main{
+  font-weight: bolder;
+  font-size: 30px;
+}
+.modalbutton{
+  margin-top: 40px;
+  width:124px;
+  height: 51px;
+  background: yellowgreen;
+  border-radius: 10px;
+  border-color: yellowgreen;
+  font:bolder;
+  color:white;
+  font-size: 15px;
+  font-weight: bolder;
+
+}
+.no{
+
+  width:124px;
+  height: 51px;
+  background: red;
+  border-radius: 10px;
+  border-color: red;
+  font:bolder;
+  color:white;
+  font-size: 15px;
+  font-weight: bolder;
+  margin-left: 100px;
+}
