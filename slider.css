@@ -139,8 +139,8 @@ body {
   -moz-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in;
   pointer-events: none;
-  height:500px;
-  width:500px;
+  height:300px;
+  width:300px;
 }
 .modalDialog:target {
   opacity:1;
